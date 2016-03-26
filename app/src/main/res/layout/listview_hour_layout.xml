@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/hour24_listview_simpleDraweeView"
+        android:layout_width="@dimen/hour_listView_simple_width"
+        android:layout_height="@dimen/hour_listView_simple_height"
+        fresco:placeholderImage="@mipmap/eee" />
+
+    <TextView
+        android:id="@+id/hour24_listview_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hour24_listview_simpleDraweeView"
+        android:layout_marginLeft="@dimen/title_text_margin"
+        android:layout_toRightOf="@+id/hour24_listview_simpleDraweeView"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="新闻标题新闻标题新闻标题新闻标题"
+        android:textColor="@color/news_title_text_color"
+        android:textSize="@dimen/title_size" />
+
+    <TextView
+        android:id="@+id/hour24_listview_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hour24_listview_title_text"
+        android:layout_below="@+id/hour24_listview_title_text"
+        android:layout_marginTop="@dimen/title_text_margin"
+        android:layout_toRightOf="@+id/hour24_listview_simpleDraweeView"
+        android:maxLines="2"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textColor="@color/news_content_color"
+        android:textSize="@dimen/content_size" />
+
+    <TextView
+        android:id="@+id/hour24_listview_replyCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hour24_listview_content_text"
+        android:layout_alignParentRight="true"
+        android:text="跟帖"
+        android:textColor="@color/news_content_color"
+        android:textSize="@dimen/content_size" />
+
+</RelativeLayout>

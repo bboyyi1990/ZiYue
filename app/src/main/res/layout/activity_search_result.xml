@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="搜索结果" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_line_view_height"
+        android:layout_margin="@dimen/title_text_margin"
+        android:background="#080808" />
+
+
+    <TextView
+        android:id="@+id/search_result_keyWord_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/title_size" />
+
+    <TextView
+        android:id="@+id/search_result_baike_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有匹配信息" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_line_view_height"
+        android:layout_margin="@dimen/title_text_margin"
+        android:background="#080808" />
+
+    <ListView
+        android:id="@+id/search_result_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

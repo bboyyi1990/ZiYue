@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/god_feng2"
+    android:gravity="center_horizontal">
+
+
+
+
+    <View
+        android:layout_width="@dimen/theme_bottom_text_size"
+        android:layout_height="@dimen/theme_bottom_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/theme_bottom_text_size"
+        android:layout_marginLeft="@dimen/search_ediText_margin"
+        android:background="@drawable/guide_shape" />
+
+    <View
+        android:layout_width="@dimen/theme_bottom_text_size"
+        android:layout_height="@dimen/theme_bottom_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/theme_bottom_text_size"
+        android:layout_marginRight="@dimen/search_ediText_margin"
+        android:background="@drawable/guide_shape2" />
+
+</RelativeLayout>

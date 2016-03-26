@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collect_recyclerView_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/collect_cardView_margin"
+        android:layout_marginTop="@dimen/collect_cardView_margin"
+        card_view:cardElevation="@dimen/collect_cardView_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/collect_RecyclerView_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="这个是标题"
+                    android:textColor="@color/news_title_text_color"
+                    android:textSize="@dimen/title_size" />
+
+                <TextView
+                    android:id="@+id/collect_recyclerView_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="4"
+                    android:text="这里是内容"
+                    android:textColor="@color/news_content_color"
+                    android:textSize="@dimen/content_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/collect_cardView_margin"
+                    android:text="关注度:"
+                    android:textColor="@color/news_content_color"
+                    android:textSize="@dimen/content_size" />
+
+                <RatingBar
+                    android:id="@+id/collect_RatingBra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/collect_cardView_margin"
+                    android:numStars="5"
+                    android:rating="0.0"
+                    android:stepSize="1"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

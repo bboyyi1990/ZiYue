@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_video_listitem_lineone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/listitem_radio_class_head_picture"
+            android:layout_width="@dimen/theme_content_view_width"
+            android:layout_height="@dimen/theme_content_view_width"
+            android:layout_gravity="clip_vertical" />
+
+        <TextView
+            android:id="@+id/listitem_radio_className_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/theme_bottom_text_size"
+            android:layout_marginTop="@dimen/title_text_margin"
+            android:layout_toRightOf="@+id/listitem_radio_class_head_picture"
+            android:text="原创"
+            android:textColor="#000000"
+            android:textSize="@dimen/title_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/listitem_radio_className_text"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_text_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/listitem_radio_linearlayout_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/listitem_radio_content_picture_one"
+                android:layout_width="@dimen/radio_listViw_simple_width"
+                android:layout_height="@dimen/radio_listView_simple_height"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/listitem_radio_content_text_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/radio_listView_textVew_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listitem_radio_linearlayout_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/listitem_radio_content_picture_two"
+                android:layout_width="@dimen/radio_listViw_simple_width"
+                android:layout_height="@dimen/radio_listView_simple_height"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/listitem_radio_content_text_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/radio_listView_textVew_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/listitem_radio_linearlayout_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/listitem_radio_content_picture_three"
+                android:layout_width="@dimen/radio_listViw_simple_width"
+                android:layout_height="@dimen/radio_listView_simple_height"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/listitem_radio_content_text_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/radio_listView_textVew_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_frame_background">
+
+    <!-- 抽屉 布局显示页面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@color/title_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/title_text_margin"
+                    android:text="天气"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/title_size" />
+
+
+                <ImageView
+                    android:id="@+id/weather_void_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/weather_voice_selector" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/weather">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/title_text_margin"
+                        android:gravity="center"
+                        android:text="大连"
+                        android:textColor="#080808"
+                        android:textSize="@dimen/weather_adress_textView_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/weather_now_cond_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="晴"
+                            android:textSize="@dimen/weather_cond_textView_size" />
+
+                        <TextView
+                            android:id="@+id/weather_now_temp_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="6°"
+                            android:textColor="#fafafa"
+                            android:textSize="@dimen/weather_temp_textView_size" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/weather_now_wind_dir"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="北风"
+                                android:textSize="@dimen/weather_new_wind_dir_size" />
+
+                            <TextView
+                                android:id="@+id/weather_now_wind_level"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="5-6级"
+                                android:textSize="@dimen/weather_now_wind_level_textView_size" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/weather_recyclerView_hourly"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/weather_listView_layout_height"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/weather_listView_daily"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></ListView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 抽屉布局拉出页面-->
+    <fragment
+        android:id="@+id/weather_drawerLayout_left_menu"
+        android:name="com.yi.ziyue.fragment.DrawerLayoutFragment"
+        android:layout_width="200dp"
+        android:layout_height="500dp"
+        android:layout_gravity="left"
+        android:tag="LEFT" />
+
+</android.support.v4.widget.DrawerLayout>

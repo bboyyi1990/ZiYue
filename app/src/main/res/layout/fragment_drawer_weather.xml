@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="今日建议"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/title_size" />
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_left_confront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="舒适度"
+        android:textColor="@color/news_content_color" />
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_left_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="洗车度"
+        android:textColor="@color/news_content_color" />
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_left_dress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="穿着"
+        android:textColor="@color/news_content_color" />
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_left_illness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="感冒度"
+        android:textColor="@color/news_content_color" />
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_left_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="运动"
+        android:textColor="@color/news_content_color" />
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_left_travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="出行"
+        android:textColor="@color/news_content_color" />
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_left_ultraviolet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="紫外线"
+        android:textColor="@color/news_content_color" />
+
+    <TextView
+        android:id="@+id/weather_drawerLayout_left_music_keep_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:text="保持背景音乐"
+        android:textColor="@color/news_content_color" />
+</LinearLayout>

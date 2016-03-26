@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!-- View Flipper 设置 flipInterval 属性设置轮播时间-->
+    <ViewFlipper
+        android:id="@+id/guide_flipper"
+        android:layout_width="match_parent"
+        android:flipInterval="3000"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/guide_page1"
+            layout="@layout/page1" />
+
+        <include
+            android:id="@+id/guide_page2"
+            layout="@layout/page2" />
+
+    </ViewFlipper>
+
+
+</LinearLayout>

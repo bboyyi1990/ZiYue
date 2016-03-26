@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/collect_content_back_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/title_text_margin"
+            android:src="@mipmap/back" />
+
+        <TextView
+        android:id="@+id/collect_content_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/title_text_margin"
+        android:gravity="center"
+        android:text="this is collect content page!"
+        android:textColor="@color/news_title_text_color"
+        android:textSize="@dimen/title_size" />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <TextView
+        android:id="@+id/collect_content_content_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/title_text_margin"
+        android:gravity="center"
+        android:text="this news content!"
+        android:textColor="@color/news_content_color"
+        android:textSize="@dimen/content_size" />
+
+    </ScrollView>
+
+   </LinearLayout>
+
+</LinearLayout>
